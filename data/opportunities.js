@@ -1,3 +1,7 @@
+/**
+ * backend/data/opportunities.js
+ * Centralized dummy database for internships and jobs (Expanded with Cloud/DevOps and AI/ML).
+ */
 const opportunities = [
   {
     id: 1,
@@ -5,13 +9,7 @@ const opportunities = [
     company: "TechNova",
     type: "Internship",
     location: "Remote",
-    requiredSkills: [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "REST API",
-      "Git"
-    ]
+    requiredSkills: ["Node.js", "Express", "MongoDB", "REST API", "Git"]
   },
   {
     id: 2,
@@ -19,13 +17,7 @@ const opportunities = [
     company: "WebWorks",
     type: "Internship",
     location: "Bangalore",
-    requiredSkills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Git"
-    ]
+    requiredSkills: ["HTML", "CSS", "JavaScript", "React", "Git"]
   },
   {
     id: 3,
@@ -33,13 +25,7 @@ const opportunities = [
     company: "DataSoft",
     type: "Internship",
     location: "Remote",
-    requiredSkills: [
-      "Python",
-      "Django",
-      "SQL",
-      "REST API",
-      "Git"
-    ]
+    requiredSkills: ["Python", "Django", "SQL", "REST API", "Git"]
   },
   {
     id: 4,
@@ -47,14 +33,7 @@ const opportunities = [
     company: "InnovateX",
     type: "Job",
     location: "Delhi",
-    requiredSkills: [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Git"
-    ]
+    requiredSkills: ["JavaScript", "React", "Node.js", "Express", "MongoDB", "Git"]
   },
   {
     id: 5,
@@ -62,13 +41,23 @@ const opportunities = [
     company: "AnalyticsHub",
     type: "Internship",
     location: "Mumbai",
-    requiredSkills: [
-      "Python",
-      "SQL",
-      "Excel",
-      "Statistics",
-      "Power BI"
-    ]
+    requiredSkills: ["Python", "SQL", "Excel", "Statistics", "Power BI"]
+  },
+  {
+    id: 6,
+    title: "Cloud & DevOps Intern",
+    company: "CloudScale",
+    type: "Internship",
+    location: "Remote",
+    requiredSkills: ["AWS", "Docker", "Kubernetes", "Linux", "CI/CD", "Git"]
+  },
+  {
+    id: 7,
+    title: "AI / ML Engineer Intern",
+    company: "NeuralTech",
+    type: "Internship",
+    location: "Hyderabad",
+    requiredSkills: ["Python", "Machine Learning", "TensorFlow", "Pandas", "SQL"]
   }
 ];
 
