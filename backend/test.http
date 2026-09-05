@@ -1,0 +1,47 @@
+### REGISTER
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "student3@gmail.com",
+    "password": "Test@123",
+    "role": "STUDENT"
+}
+
+
+### LOGIN
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "student2@gmail.com",
+    "password": "Test@123"
+}
+
+
+### TEST WITHOUT JWT
+
+GET http://localhost:8080/api/test
+
+
+### TEST WITH JWT
+
+GET http://localhost:8080/api/test
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdHVkZW50MkBnbWFpbC5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNzg4NTQwMDk0LCJleHAiOjE3ODg1NDM2OTR9.wBJO0bJidkZXSz2ORQ85J9Wh4KPki854CUoB4ma63qojLFASGVgAywXmunTxqiEf
+
+
+### CREATE STUDENT PROFILE
+
+POST http://localhost:8080/api/students/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdHVkZW50MkBnbWFpbC5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNzg4NTQwMDk0LCJleHAiOjE3ODg1NDM2OTR9.wBJO0bJidkZXSz2ORQ85J9Wh4KPki854CUoB4ma63qojLFASGVgAywXmunTxqiEf
+
+{
+    "userId": 2,
+    "name": "Subham",
+    "education": "B.Tech",
+    "branch": "Computer Science",
+    "graduationYear": 2027
+}
