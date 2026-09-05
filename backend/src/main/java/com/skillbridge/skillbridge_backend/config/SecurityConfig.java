@@ -1,5 +1,5 @@
 package com.skillbridge.skillbridge_backend.config;
-
+import org.springframework.http.HttpMethod;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -37,12 +37,17 @@ public class SecurityConfig {
             )
 
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers(
-                    "/api/auth/register",
-                    "/api/auth/login"
-                ).permitAll()
-                .anyRequest().authenticated()
-            )
+    .requestMatchers(
+        "/api/auth/register",
+        "/api/auth/login"
+    ).permitAll()
+    .requestMatchers(
+        HttpMethod.GET,
+        "/api/opportunities",
+        "/api/opportunities/**"
+    ).permitAll()
+    .anyRequest().authenticated()
+)
 
             .addFilterBefore(
                 jwtAuthenticationFilter,
