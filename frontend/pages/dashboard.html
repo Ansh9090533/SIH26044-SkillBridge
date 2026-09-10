@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBridge | Student Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SkillBridge</h2>
+            <p>Student Portal</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="#" class="nav-item active">
+                <span>🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+           <a href="profile.html" class="nav-item">
+                <span>👤</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📝</span>
+                <span>Assessment</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📊</span>
+                <span>Results</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>🎯</span>
+                <span>Skill Gap</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📚</span>
+                <span>Learning</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>💼</span>
+                <span>Opportunities</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+                <span>⚙️</span>
+                <span>Settings</span>
+            </a>
+
+            <a href="#" class="nav-item logout">
+                <span>🚪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div>
+                <h1>Student Dashboard</h1>
+                <p>Track your skills and career progress.</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification-btn">
+                    🔔
+                </button>
+
+                <div class="profile-mini">
+
+                    <div class="avatar">
+                        S
+                    </div>
+
+                    <div>
+                        <strong>Student Name</strong>
+                        <small>Java Developer</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= WELCOME SECTION ================= -->
+        <section class="welcome-section">
+
+            <div>
+                <h2>Welcome back, Student 👋</h2>
+
+                <p>
+                    Here's a quick overview of your current skills,
+                    assessments and career opportunities.
+                </p>
+
+                <span class="career-goal">
+                    Career Goal:
+                    <strong>Java Backend Developer</strong>
+                </span>
+            </div>
+
+            <button class="primary-btn">
+                Take Assessment
+            </button>
+
+        </section>
+
+
+        <!-- ================= SUMMARY CARDS ================= -->
+        <section class="summary-cards">
+
+            <div class="summary-card">
+
+                <span class="card-icon">📊</span>
+
+                <div>
+                    <p>Overall Score</p>
+                    <h2>72%</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span class="card-icon">🧠</span>
+
+                <div>
+                    <p>Skills Assessed</p>
+                    <h2>6</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span class="card-icon">🎯</span>
+
+                <div>
+                    <p>Weak Skills</p>
+                    <h2>2</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span class="card-icon">💼</span>
+
+                <div>
+                    <p>Job Matches</p>
+                    <h2>8</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PERFORMANCE SECTION ================= -->
+        <section class="content-grid">
+
+            <!-- SKILL PERFORMANCE -->
+            <div class="panel skill-performance">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Skill Performance</h3>
+                        <p>Your current skill-wise scores</p>
+                    </div>
+
+                    <a href="#">View All</a>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>Java</span>
+                        <strong>80%</strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress java"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>SQL</span>
+                        <strong>60%</strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress sql"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>DBMS</span>
+                        <strong>75%</strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress dbms"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>DSA</span>
+                        <strong>55%</strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress dsa"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAIN ASSESSMENT -->
+            <div class="panel assessment-card">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Main Assessment</h3>
+                        <p>AI-generated mixed assessment</p>
+                    </div>
+
+                </div>
+
+
+                <div class="assessment-score">
+
+                    <span>72%</span>
+                    <small>Overall Score</small>
+
+                </div>
+
+
+                <div class="assessment-details">
+
+                    <div>
+                        <span>Questions</span>
+                        <strong>20</strong>
+                    </div>
+
+                    <div>
+                        <span>Status</span>
+                        <strong>Completed</strong>
+                    </div>
+
+                </div>
+
+
+                <button class="secondary-btn">
+                    View Result
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILL GAP SECTION ================= -->
+        <section class="content-grid">
+
+            <!-- WEAK SKILLS -->
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Skill Gap Analysis</h3>
+                        <p>Skills that need improvement</p>
+                    </div>
+
+                    <a href="#">View Analysis</a>
+
+                </div>
+
+
+                <div class="gap-item">
+
+                    <div>
+
+                        <strong>DSA</strong>
+
+                        <p>
+                            Current Score:
+                            <strong>55%</strong>
+                        </p>
+
+                    </div>
+
+                    <span class="weak-badge">
+                        Needs Improvement
+                    </span>
+
+                </div>
+
+
+                <div class="gap-item">
+
+                    <div>
+
+                        <strong>SQL</strong>
+
+                        <p>
+                            Current Score:
+                            <strong>60%</strong>
+                        </p>
+
+                    </div>
+
+                    <span class="weak-badge">
+                        Needs Improvement
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- TARGETED ASSESSMENTS -->
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h3>Targeted Assessments</h3>
+                        <p>Improve your weak skills</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="targeted-test">
+
+                    <div>
+
+                        <strong>DSA Targeted Test</strong>
+
+                        <p>
+                            Latest Score:
+                            <strong>78%</strong>
+                        </p>
+
+                    </div>
+
+                    <button class="small-btn">
+                        Retake
+                    </button>
+
+                </div>
+
+
+                <div class="targeted-test">
+
+                    <div>
+
+                        <strong>SQL Targeted Test</strong>
+
+                        <p>
+                            Not attempted yet
+                        </p>
+
+                    </div>
+
+                    <button class="small-btn">
+                        Take Test
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OPPORTUNITIES ================= -->
+        <section class="panel opportunities-panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h3>Recommended Opportunities</h3>
+
+                    <p>
+                        Based on your skills and assessment performance
+                    </p>
+
+                </div>
+
+                <a href="#">View All</a>
+
+            </div>
+
+
+            <div class="opportunity-list">
+
+
+                <div class="opportunity">
+
+                    <div class="company-icon">
+                        JC
+                    </div>
+
+                    <div class="opportunity-info">
+
+                        <h4>Java Backend Intern</h4>
+
+                        <p>Example Company • Remote</p>
+
+                    </div>
+
+                    <div class="match">
+
+                        <strong>87%</strong>
+                        <span>Match</span>
+
+                    </div>
+
+                    <button class="apply-btn">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="opportunity">
+
+                    <div class="company-icon">
+                        SD
+                    </div>
+
+                    <div class="opportunity-info">
+
+                        <h4>Software Developer Intern</h4>
+
+                        <p>Example Company • Bangalore</p>
+
+                    </div>
+
+                    <div class="match">
+
+                        <strong>81%</strong>
+                        <span>Match</span>
+
+                    </div>
+
+                    <button class="apply-btn">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="opportunity">
+
+                    <div class="company-icon">
+                        TB
+                    </div>
+
+                    <div class="opportunity-info">
+
+                        <h4>Backend Developer Intern</h4>
+
+                        <p>Example Company • Hybrid</p>
+
+                    </div>
+
+                    <div class="match">
+
+                        <strong>76%</strong>
+                        <span>Match</span>
+
+                    </div>
+
+                    <button class="apply-btn">
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

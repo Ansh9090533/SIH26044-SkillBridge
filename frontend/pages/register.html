@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBridge | Create Account</title>
+
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+
+<div class="auth-page">
+
+    <!-- ================= LEFT SIDE ================= -->
+
+    <section class="auth-intro">
+
+        <div class="brand">
+            <h1>SkillBridge</h1>
+            <p>Connect Skills. Discover Opportunities.</p>
+        </div>
+
+        <div class="intro-content">
+
+            <span class="intro-tag">
+                AI-POWERED CAREER PLATFORM
+            </span>
+
+            <h2>
+                Build your profile.
+                <br>
+                Discover your potential.
+            </h2>
+
+            <p>
+                Create your SkillBridge account and connect with
+                skill assessments, learning opportunities and
+                career pathways.
+            </p>
+
+            <div class="intro-points">
+
+                <div class="intro-point">
+                    <span>✓</span>
+                    <p>AI-powered skill assessment</p>
+                </div>
+
+                <div class="intro-point">
+                    <span>✓</span>
+                    <p>Personalized skill-gap analysis</p>
+                </div>
+
+                <div class="intro-point">
+                    <span>✓</span>
+                    <p>Internship and opportunity matching</p>
+                </div>
+
+                <div class="intro-point">
+                    <span>✓</span>
+                    <p>Student, company and college ecosystem</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FORM SIDE ================= -->
+
+    <section class="auth-form-section">
+
+        <div class="register-card">
+
+            <div class="form-heading">
+
+                <h2>Create Your Account</h2>
+
+                <p>
+                    Select your role to get started.
+                </p>
+
+            </div>
+
+
+            <!-- ================= ROLE SELECTION ================= -->
+
+            <div class="role-selector">
+
+                <button
+                    type="button"
+                    class="role-card active"
+                    data-role="student">
+
+                    <span class="role-icon">🎓</span>
+
+                    <strong>Student</strong>
+
+                    <small>
+                        Build skills & find opportunities
+                    </small>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="role-card"
+                    data-role="company">
+
+                    <span class="role-icon">🏢</span>
+
+                    <strong>Company</strong>
+
+                    <small>
+                        Discover skilled candidates
+                    </small>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="role-card"
+                    data-role="college">
+
+                    <span class="role-icon">🏫</span>
+
+                    <strong>College</strong>
+
+                    <small>
+                        Analyze student skills
+                    </small>
+
+                </button>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- STUDENT FORM -->
+            <!-- ================================================= -->
+
+            <form id="student-form" class="registration-form">
+
+                <input
+                    type="hidden"
+                    name="role"
+                    value="student"
+                >
+
+
+                <!-- ACCOUNT INFORMATION -->
+
+                <div class="form-section">
+
+                    <div class="section-title">
+                        <h3>Account Information</h3>
+                        <p>Set up your login details.</p>
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="student-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="student-name"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="student-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="student-email"
+                                name="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="student-password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="student-password"
+                                name="password"
+                                placeholder="Create a password"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="student-confirm-password">
+                                Confirm Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="student-confirm-password"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EDUCATION -->
+
+                <div class="form-section">
+
+                    <div class="section-title">
+
+                        <h3>Education</h3>
+
+                        <p>
+                            Tell us about your academic background.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="college">
+                                College / University
+                            </label>
+
+                            <input
+                                type="text"
+                                id="college"
+                                name="college"
+                                placeholder="Enter college or university"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="degree">
+                                Degree / Course
+                            </label>
+
+                            <input
+                                type="text"
+                                id="degree"
+                                name="degree"
+                                placeholder="e.g. B.Tech"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="branch">
+                                Branch / Specialization
+                            </label>
+
+                            <input
+                                type="text"
+                                id="branch"
+                                name="branch"
+                                placeholder="e.g. Computer Science"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="current-year">
+                                Current Year
+                            </label>
+
+                            <select
+                                id="current-year"
+                                name="currentYear"
+                                required>
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option>1st Year</option>
+                                <option>2nd Year</option>
+                                <option>3rd Year</option>
+                                <option>4th Year</option>
+                                <option>5th Year</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="graduation-year">
+                                Graduation Year
+                            </label>
+
+                            <input
+                                type="number"
+                                id="graduation-year"
+                                name="graduationYear"
+                                placeholder="e.g. 2028"
+                                min="2020"
+                                max="2100"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="cgpa">
+                                CGPA / Percentage
+                            </label>
+
+                            <input
+                                type="text"
+                                id="cgpa"
+                                name="cgpa"
+                                placeholder="e.g. 8.2 CGPA or 82%"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CAREER -->
+
+                <div class="form-section">
+
+                    <div class="section-title">
+
+                        <h3>Career Information</h3>
+
+                        <p>
+                            Help us understand your career direction.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="career-goal">
+                                Career Goal
+                            </label>
+
+                            <input
+                                type="text"
+                                id="career-goal"
+                                name="careerGoal"
+                                placeholder="e.g. Backend Developer"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="preferred-role">
+                                Preferred Job Role
+                            </label>
+
+                            <input
+                                type="text"
+                                id="preferred-role"
+                                name="preferredRole"
+                                placeholder="e.g. Java Developer"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="experience">
+                                Experience Level
+                            </label>
+
+                            <select
+                                id="experience"
+                                name="experienceLevel">
+
+                                <option value="">
+                                    Select level
+                                </option>
+
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="location">
+                                Preferred Location
+                            </label>
+
+                            <input
+                                type="text"
+                                id="location"
+                                name="preferredLocation"
+                                placeholder="e.g. Remote, Delhi, Bangalore"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SKILLS -->
+
+                <div class="form-section">
+
+                    <div class="section-title">
+
+                        <h3>Your Skills</h3>
+
+                        <p>
+                            Select the skills you currently have.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skills-grid">
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="C">
+                            <span>C</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="C++">
+                            <span>C++</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="Java">
+                            <span>Java</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="Python">
+                            <span>Python</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="JavaScript">
+                            <span>JavaScript</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="HTML">
+                            <span>HTML</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="CSS">
+                            <span>CSS</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="React">
+                            <span>React</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="SQL">
+                            <span>SQL</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="DBMS">
+                            <span>DBMS</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="DSA">
+                            <span>DSA</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="OOP">
+                            <span>OOP</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="Git/GitHub">
+                            <span>Git / GitHub</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="Spring Boot">
+                            <span>Spring Boot</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="Machine Learning">
+                            <span>Machine Learning</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="Data Analysis">
+                            <span>Data Analysis</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="Communication">
+                            <span>Communication</span>
+                        </label>
+
+                        <label class="skill-option">
+                            <input type="checkbox" name="skills" value="Problem Solving">
+                            <span>Problem Solving</span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="form-group other-skill">
+
+                        <label for="other-skills">
+                            Other Skills
+                        </label>
+
+                        <input
+                            type="text"
+                            id="other-skills"
+                            name="otherSkills"
+                            placeholder="e.g. Docker, AWS, Figma"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <div class="form-submit">
+
+                    <label class="terms">
+
+                        <input
+                            type="checkbox"
+                            required
+                        >
+
+                        <span>
+                            I agree to the SkillBridge terms and
+                            privacy policy.
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="create-account-btn">
+
+                        Create Student Account
+
+                    </button>
+
+
+                    <p class="login-link">
+
+                        Already have an account?
+
+                        <a href="login.html">
+                            Login
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </form>
+
+
+            <!-- ================================================= -->
+            <!-- COMPANY FORM -->
+            <!-- ================================================= -->
+
+            <form
+                id="company-form"
+                class="registration-form hidden">
+
+                <input
+                    type="hidden"
+                    name="role"
+                    value="company"
+                >
+
+
+                <div class="form-section">
+
+                    <div class="section-title">
+
+                        <h3>Company Information</h3>
+
+                        <p>
+                            Tell us about your organization.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="company-name">
+                                Company Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="company-name"
+                                placeholder="Enter company name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="company-email">
+                                Official Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="company-email"
+                                placeholder="company@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="company-password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="company-password"
+                                placeholder="Create a password"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="company-industry">
+                                Industry
+                            </label>
+
+                            <input
+                                type="text"
+                                id="company-industry"
+                                placeholder="e.g. Software, Finance"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="company-size">
+                                Company Size
+                            </label>
+
+                            <select id="company-size">
+
+                                <option value="">
+                                    Select size
+                                </option>
+
+                                <option>1-10</option>
+                                <option>11-50</option>
+                                <option>51-200</option>
+                                <option>201-500</option>
+                                <option>500+</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="company-location">
+                                Location
+                            </label>
+
+                            <input
+                                type="text"
+                                id="company-location"
+                                placeholder="e.g. Delhi"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="company-website">
+                                Website
+                            </label>
+
+                            <input
+                                type="url"
+                                id="company-website"
+                                placeholder="https://example.com"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="company-description">
+                                Company Description
+                            </label>
+
+                            <textarea
+                                id="company-description"
+                                rows="5"
+                                placeholder="Describe your company">
+                            </textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-submit">
+
+                    <label class="terms">
+
+                        <input type="checkbox" required>
+
+                        <span>
+                            I agree to the SkillBridge terms
+                            and privacy policy.
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="create-account-btn">
+
+                        Create Company Account
+
+                    </button>
+
+                    <p class="login-link">
+
+                        Already have an account?
+
+                        <a href="login.html">
+                            Login
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </form>
+
+
+            <!-- ================================================= -->
+            <!-- COLLEGE FORM -->
+            <!-- ================================================= -->
+
+            <form
+                id="college-form"
+                class="registration-form hidden">
+
+                <input
+                    type="hidden"
+                    name="role"
+                    value="college"
+                >
+
+
+                <div class="form-section">
+
+                    <div class="section-title">
+
+                        <h3>College Information</h3>
+
+                        <p>
+                            Tell us about your institution.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="college-name">
+                                College Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="college-name"
+                                placeholder="Enter college name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="college-email">
+                                Official Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="college-email"
+                                placeholder="college@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="college-password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="college-password"
+                                placeholder="Create a password"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="affiliation">
+                                University / Affiliation
+                            </label>
+
+                            <input
+                                type="text"
+                                id="affiliation"
+                                placeholder="Enter affiliation"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="college-type">
+                                College Type
+                            </label>
+
+                            <select id="college-type">
+
+                                <option value="">
+                                    Select type
+                                </option>
+
+                                <option>Government</option>
+                                <option>Private</option>
+                                <option>Autonomous</option>
+                                <option>Other</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="college-location">
+                                Location
+                            </label>
+
+                            <input
+                                type="text"
+                                id="college-location"
+                                placeholder="e.g. Delhi"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="college-website">
+                                Website
+                            </label>
+
+                            <input
+                                type="url"
+                                id="college-website"
+                                placeholder="https://example.com"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="departments">
+                                Departments
+                            </label>
+
+                            <textarea
+                                id="departments"
+                                rows="4"
+                                placeholder="e.g. CSE, ECE, Mechanical, Civil">
+                            </textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-submit">
+
+                    <label class="terms">
+
+                        <input type="checkbox" required>
+
+                        <span>
+                            I agree to the SkillBridge terms
+                            and privacy policy.
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="create-account-btn">
+
+                        Create College Account
+
+                    </button>
+
+                    <p class="login-link">
+
+                        Already have an account?
+
+                        <a href="login.html">
+                            Login
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    const roleCards = document.querySelectorAll(".role-card");
+
+    const studentForm = document.getElementById("student-form");
+
+    const companyForm = document.getElementById("company-form");
+
+    const collegeForm = document.getElementById("college-form");
+
+
+    roleCards.forEach(function(card) {
+
+        card.addEventListener("click", function() {
+
+            roleCards.forEach(function(item) {
+                item.classList.remove("active");
+            });
+
+            card.classList.add("active");
+
+
+            const role = card.dataset.role;
+
+
+            studentForm.classList.add("hidden");
+
+            companyForm.classList.add("hidden");
+
+            collegeForm.classList.add("hidden");
+
+
+            if (role === "student") {
+
+                studentForm.classList.remove("hidden");
+
+            }
+
+
+            if (role === "company") {
+
+                companyForm.classList.remove("hidden");
+
+            }
+
+
+            if (role === "college") {
+
+                collegeForm.classList.remove("hidden");
+
+            }
+
+        });
+
+    });
+
+
+    studentForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        alert(
+            "Student registration form submitted.\n\n" +
+            "Backend + Supabase connection will be added later."
+        );
+
+    });
+
+
+    companyForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        alert(
+            "Company registration form submitted.\n\n" +
+            "Backend + Supabase connection will be added later."
+        );
+
+    });
+
+
+    collegeForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        alert(
+            "College registration form submitted.\n\n" +
+            "Backend + Supabase connection will be added later."
+        );
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
