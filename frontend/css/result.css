@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Result dashboard page
+   ========================================================================== */
+
+.result-header-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.result-header-card .rh-meta { display: flex; flex-direction: column; gap: 4px; }
+.result-header-card .rh-meta h2 { margin: 0; font-size: 19px; font-weight: 800; }
+.result-header-card .rh-meta span { font-size: 13px; color: var(--text-secondary); }
+
+.score-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.score-ring-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.score-ring {
+  width: 168px; height: 168px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.score-ring .ring-inner {
+  width: 134px; height: 134px; border-radius: 50%;
+  background: var(--bg-card);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.score-ring .ring-inner b { font-size: 34px; font-weight: 800; }
+.score-ring .ring-inner span { font-size: 11.5px; color: var(--text-muted); margin-top: 2px; }
+
+.score-details h3 { margin: 0 0 8px; font-size: 18px; font-weight: 800; }
+.score-details p { margin: 0 0 16px; font-size: 14px; color: var(--text-secondary); max-width: 52ch; }
+.score-status-row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* Summary strip ------------------------------------------------------------*/
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.summary-item .s-icon {
+  width: 34px; height: 34px; border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; margin-bottom: 4px;
+}
+.summary-item .s-value { font-size: 22px; font-weight: 800; }
+.summary-item .s-label { font-size: 12.5px; color: var(--text-muted); }
+
+/* Skill-wise performance ----------------------------------------------------*/
+
+.skill-perf-list { display: flex; flex-direction: column; gap: 16px; }
+
+/* Skill gap summary ---------------------------------------------------------*/
+
+.gap-columns { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+.gap-col h4 { font-size: 13.5px; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.gap-col ul { display: flex; flex-direction: column; gap: 10px; }
+.gap-col li {
+  font-size: 13.5px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--bg-elevated);
+  display: flex; align-items: flex-start; gap: 8px;
+}
+
+/* Actions ---------------------------------------------------------------*/
+
+.result-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .score-card { grid-template-columns: 1fr; text-align: center; }
+  .score-ring-wrap { margin: 0 auto; }
+  .gap-columns { grid-template-columns: 1fr; }
+}
