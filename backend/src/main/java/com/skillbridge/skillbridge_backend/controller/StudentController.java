@@ -8,6 +8,7 @@ import jakarta.validation.Valid;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -22,12 +23,44 @@ public class StudentController {
 
     @PostMapping("/profile")
     public ResponseEntity<Student> createProfile(
-            @Valid @RequestBody StudentProfileRequest request) {
+            @Valid @RequestBody StudentProfileRequest request,
+            Authentication authentication) {
 
-        Student student = studentService.createProfile(request);
+        Long userId =
+                (Long) authentication.getPrincipal();
+
+        Student student =
+                studentService.createProfile(userId, request);
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(student);
+    }
+
+    @GetMapping("/profile")
+    public ResponseEntity<Student> getProfile(
+            Authentication authentication) {
+
+        Long userId =
+                (Long) authentication.getPrincipal();
+
+        Student student =
+                studentService.getProfile(userId);
+
+        return ResponseEntity.ok(student);
+    }
+
+    @PutMapping("/profile")
+    public ResponseEntity<Student> updateProfile(
+            @Valid @RequestBody StudentProfileRequest request,
+            Authentication authentication) {
+
+        Long userId =
+                (Long) authentication.getPrincipal();
+
+        Student student =
+                studentService.updateProfile(userId, request);
+
+        return ResponseEntity.ok(student);
     }
 }

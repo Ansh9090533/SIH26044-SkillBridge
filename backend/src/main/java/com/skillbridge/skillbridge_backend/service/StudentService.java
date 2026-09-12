@@ -20,13 +20,17 @@ public class StudentService {
         this.userRepository = userRepository;
     }
 
-    public Student createProfile(StudentProfileRequest request) {
+    public Student createProfile(Long userId,
+                                 StudentProfileRequest request) {
 
-        User user = userRepository.findById(request.getUserId())
-                .orElseThrow(() -> new RuntimeException("User not found"));
+        User user = userRepository.findById(userId)
+                .orElseThrow(() ->
+                        new RuntimeException("User not found"));
 
-        if (studentRepository.existsByUser_UserId(request.getUserId())) {
-            throw new RuntimeException("Student profile already exists");
+        if (studentRepository.existsByUser_UserId(userId)) {
+            throw new RuntimeException(
+                    "Student profile already exists"
+            );
         }
 
         Student student = new Student();
@@ -36,6 +40,35 @@ public class StudentService {
         student.setEducation(request.getEducation());
         student.setBranch(request.getBranch());
         student.setGraduationYear(request.getGraduationYear());
+
+        return studentRepository.save(student);
+    }
+
+    public Student getProfile(Long userId) {
+
+        return studentRepository.findByUser_UserId(userId)
+                .orElseThrow(() ->
+                        new RuntimeException(
+                                "Student profile not found"
+                        ));
+    }
+
+    public Student updateProfile(Long userId,
+                                 StudentProfileRequest request) {
+
+        Student student =
+                studentRepository.findByUser_UserId(userId)
+                        .orElseThrow(() ->
+                                new RuntimeException(
+                                        "Student profile not found"
+                                ));
+
+        student.setName(request.getName());
+        student.setEducation(request.getEducation());
+        student.setBranch(request.getBranch());
+        student.setGraduationYear(
+                request.getGraduationYear()
+        );
 
         return studentRepository.save(student);
     }

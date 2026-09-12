@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 public class StudentProfileRequest {
 
     @NotNull
-    private Integer userId;
+    private Long userId;
 
     @NotBlank
     private String name;
@@ -20,11 +20,11 @@ public class StudentProfileRequest {
     public StudentProfileRequest() {
     }
 
-    public Integer getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
